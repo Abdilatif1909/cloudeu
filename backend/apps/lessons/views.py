@@ -13,7 +13,13 @@ from .serializers import LessonSerializer
 
 
 class LessonViewSet(viewsets.ModelViewSet):
-    queryset = Lesson.objects.select_related("course")
+    queryset = Lesson.objects.select_related("course").prefetch_related(
+        "lecture_materials",
+        "practice_materials",
+        "videos",
+        "resources",
+        "quizzes",
+    )
     serializer_class = LessonSerializer
     permission_classes = [ReadOnlyOrTeacher]
     filterset_fields = ["course", "lesson_number"]

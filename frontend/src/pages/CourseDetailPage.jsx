@@ -38,14 +38,32 @@ export default function CourseDetailPage() {
     const bucket = {};
     lessons.forEach((lesson) => {
       bucket[lesson.id] = { lectures: [], practices: [], videos: [], quizzes: [], resources: [] };
+      (lesson.lecture_materials || []).forEach((item) => bucket[lesson.id].lectures.push(item));
+      (lesson.practice_materials || []).forEach((item) => bucket[lesson.id].practices.push(item));
+      (lesson.videos || []).forEach((item) => bucket[lesson.id].videos.push(item));
+      (lesson.quizzes || []).forEach((item) => bucket[lesson.id].quizzes.push(item));
+      (lesson.resources || []).forEach((item) => bucket[lesson.id].resources.push(item));
     });
-    lectures.forEach((item) => bucket[item.lesson]?.lectures.push(item));
-    practices.forEach((item) => bucket[item.lesson]?.practices.push(item));
-    videos.forEach((item) => bucket[item.lesson]?.videos.push(item));
-    quizzes.forEach((item) => bucket[item.lesson]?.quizzes.push(item));
-    resources.forEach((item) => item.lesson && bucket[item.lesson]?.resources.push(item));
+    const appendUnique = (lessonId, key, item) => {
+      const target = bucket[lessonId]?.[key];
+      if (target && !target.some((existing) => existing.id === item.id)) {
+        target.push(item);
+      }
+    };
+    lectures.forEach((item) => appendUnique(item.lesson, 'lectures', item));
+    practices.forEach((item) => appendUnique(item.lesson, 'practices', item));
+    videos.forEach((item) => appendUnique(item.lesson, 'videos', item));
+    quizzes.forEach((item) => appendUnique(item.lesson, 'quizzes', item));
+    resources.forEach((item) => item.lesson && appendUnique(item.lesson, 'resources', item));
     return bucket;
   }, [lessons, lectures, practices, videos, quizzes, resources]);
+
+  const contentTotals = useMemo(() => Object.values(resourcesByLesson).reduce((totals, lessonResources) => ({
+    lectures: totals.lectures + lessonResources.lectures.length,
+    practices: totals.practices + lessonResources.practices.length,
+    videos: totals.videos + lessonResources.videos.length,
+    quizzes: totals.quizzes + lessonResources.quizzes.length,
+  }), { lectures: 0, practices: 0, videos: 0, quizzes: 0 }), [resourcesByLesson]);
 
   if (!course) return <div className="page-shell"><div className="glass-card p-4">Yuklanmoqda...</div></div>;
 
@@ -118,19 +136,19 @@ export default function CourseDetailPage() {
             </div>
             <div className="resource-row">
               <span className="text-muted">Ma'ruzalar</span>
-              <strong>{lectures.length}</strong>
+              <strong>{contentTotals.lectures}</strong>
             </div>
             <div className="resource-row">
               <span className="text-muted">Amaliyotlar</span>
-              <strong>{practices.length}</strong>
+              <strong>{contentTotals.practices}</strong>
             </div>
             <div className="resource-row">
               <span className="text-muted">Videolar</span>
-              <strong>{videos.length}</strong>
+              <strong>{contentTotals.videos}</strong>
             </div>
             <div className="resource-row">
               <span className="text-muted">Testlar</span>
-              <strong>{quizzes.length}</strong>
+              <strong>{contentTotals.quizzes}</strong>
             </div>
           </div>
         </aside>
