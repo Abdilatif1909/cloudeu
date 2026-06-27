@@ -1,25 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-labelledby="title desc">
-  <title id="title">Cloud Education Platform logo</title>
-  <desc id="desc">Official cloude.uz brand mark for Axborot Texnologiyalari va Menejment Universiteti.</desc>
-  <defs>
-    <linearGradient id="g" x1="74" y1="64" x2="346" y2="356" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#38bdf8"/>
-      <stop offset=".45" stop-color="#4f46e5"/>
-      <stop offset="1" stop-color="#10b981"/>
-    </linearGradient>
-    <linearGradient id="cloud" x1="104" y1="150" x2="316" y2="286" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fff"/>
-      <stop offset="1" stop-color="#dbeafe"/>
-    </linearGradient>
-    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#1e1b4b" flood-opacity=".22"/>
-    </filter>
-  </defs>
-  <rect width="420" height="420" rx="96" fill="#f8fafc"/>
-  <path d="M72 210c0-76 62-138 138-138s138 62 138 138-62 138-138 138S72 286 72 210Z" fill="url(#g)" filter="url(#shadow)"/>
-  <path d="M127 236c0-28 23-51 51-51 8-31 36-53 69-53 40 0 73 33 73 73v2c23 5 40 25 40 49 0 28-23 50-51 50H159c-31 0-56-25-56-56 0-5 1-10 2-14h22Z" fill="url(#cloud)" opacity=".96"/>
-  <path d="M156 235c0-33 27-60 60-60 18 0 35 8 46 21" fill="none" stroke="#4f46e5" stroke-width="15" stroke-linecap="round"/>
-  <path d="M210 275V150" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
-  <path d="M172 187h76" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
-  <path d="M166 275h88" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Axborot Texnologiyalari va Menejment Universiteti logo</title>
+  <desc id="desc">Blue ATM university monogram used as the official cloude.uz project logo.</desc>
+  <rect width="512" height="512" fill="#fff"/>
+  <g fill="none" stroke="#030d86" stroke-linecap="butt" stroke-linejoin="miter">
+    <path d="M150 80A208 208 0 0 0 65 198" stroke-width="30"/>
+    <path d="M65 314a208 208 0 0 0 85 118" stroke-width="30"/>
+    <path d="M362 80a208 208 0 0 1 85 118" stroke-width="30"/>
+    <path d="M447 314a208 208 0 0 1-85 118" stroke-width="30"/>
+    <path d="M23 256h112" stroke-width="30"/>
+    <path d="M377 256h112" stroke-width="30"/>
+    <path d="M188 37h136" stroke-width="30"/>
+    <path d="M188 475h136" stroke-width="30"/>
+    <path d="M186 53v406" stroke-width="30"/>
+    <path d="M326 53v406" stroke-width="30"/>
+  </g>
+  <path d="M142 448V112h52l64 196 64-196h52v336h-47V211L274 363h-32L189 211v237z" fill="#030d86"/>
+  <path d="M135 112h106v44h-32v292h-49V156h-25z" fill="#030d86"/>
+  <path d="M271 112h106v44h-25v292h-49V156h-32z" fill="#030d86"/>
 </svg>

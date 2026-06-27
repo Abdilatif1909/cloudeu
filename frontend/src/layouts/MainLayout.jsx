@@ -99,7 +99,7 @@ export default function MainLayout() {
             <button className="btn btn-outline-secondary btn-sm" type="button" onClick={() => setCollapsed((value) => !value)} aria-label="Toggle sidebar">
               {collapsed ? <ChevronsRight size={17} /> : <ChevronsLeft size={17} />}
             </button>
-            <img className="brand-logo brand-logo-header d-none d-md-block" src={BRAND_LOGO} alt="Axborot Texnologiyalari va Menejment Universiteti logo" />
+            <img className="brand-logo brand-logo-header" src={BRAND_LOGO} alt="Axborot Texnologiyalari va Menejment Universiteti logo" />
             <button className="topbar-search border-0 text-start" type="button" onClick={() => setSpotlightOpen(true)}>
               <Search size={18} />
               <span>Search anything...</span>
