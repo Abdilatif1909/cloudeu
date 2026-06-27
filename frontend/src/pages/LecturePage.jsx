@@ -5,6 +5,7 @@ import Breadcrumbs from '../components/Breadcrumbs.jsx';
 import LoadingSkeleton from '../components/LoadingSkeleton.jsx';
 import ToastMessage from '../components/ToastMessage.jsx';
 import { lmsService } from '../services/lmsService.js';
+import { mediaUrl } from '../utils/mediaUrl.js';
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api/v1';
 
@@ -100,7 +101,8 @@ export default function LecturePage() {
 
   if (!lecture) return <div className="page-shell"><LoadingSkeleton /></div>;
 
-  const pdfSrc = `${API_BASE}/lecture-materials/${lecture.id}/preview/#page=${page}&zoom=${zoom}${pdfSearch ? `&search=${encodeURIComponent(pdfSearch)}` : ''}`;
+  const directPdfUrl = mediaUrl(lecture.pdf_file);
+  const pdfSrc = `${directPdfUrl}#page=${page}&zoom=${zoom}${pdfSearch ? `&search=${encodeURIComponent(pdfSearch)}` : ''}`;
 
   return (
     <div className="page-shell">
@@ -163,7 +165,7 @@ export default function LecturePage() {
                   </button>
                 ))}
               </div>
-              <a className="btn btn-brand w-100 mb-2 d-inline-flex align-items-center justify-content-center gap-2" href={`${API_BASE}/lecture-materials/${lecture.id}/download/`}><Download size={17} /> PDF yuklab olish</a>
+              <a className="btn btn-brand w-100 mb-2 d-inline-flex align-items-center justify-content-center gap-2" href={directPdfUrl} target="_blank" rel="noreferrer"><Download size={17} /> PDF ochish</a>
               <button className="btn btn-outline-secondary w-100 mb-2 d-inline-flex align-items-center justify-content-center gap-2" type="button" onClick={bookmark}><Bookmark size={17} /> Bookmark</button>
               <div className="d-flex gap-2">
                 {nav.previous && <Link className="btn btn-outline-secondary flex-fill" to={`/lectures/${nav.previous.id}`}>Oldingi</Link>}

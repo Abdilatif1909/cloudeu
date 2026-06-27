@@ -4,10 +4,11 @@ import { Award, BookOpen, CheckCircle2, Download, FileText, GraduationCap, PlayC
 import { motion } from 'framer-motion';
 import ToastMessage from '../components/ToastMessage.jsx';
 import { lmsService } from '../services/lmsService.js';
+import { mediaUrl } from '../utils/mediaUrl.js';
 
 const resourceMeta = {
-  lectures: { title: "Ma'ruza PDF", icon: FileText, toPrefix: '/lectures' },
-  practices: { title: "Amaliy mashg'ulotlar", icon: CheckCircle2, toPrefix: '/practices' },
+  lectures: { title: "Ma'ruza PDF", icon: FileText, fileKey: 'pdf_file' },
+  practices: { title: "Amaliy mashg'ulotlar", icon: CheckCircle2, fileKey: 'pdf_file' },
   videos: { title: 'Videolar', icon: PlayCircle, toPrefix: '/videos' },
   resources: { title: 'Resurslar', icon: Download, fileKey: 'file' },
   quizzes: { title: 'Testlar', icon: TestTube2 },
@@ -176,7 +177,7 @@ function ResourceList({ title, items = [], fileKey, toPrefix, icon: Icon }) {
         if (!fileKey) {
           return <div className="resource-row" key={item.id}>{content}</div>;
         }
-        return <a className="resource-row text-decoration-none" href={item[fileKey]} target="_blank" rel="noreferrer" key={item.id}>{content}</a>;
+        return <a className="resource-row text-decoration-none" href={mediaUrl(item[fileKey])} target="_blank" rel="noreferrer" key={item.id}>{content}</a>;
       })}
     </div>
   );

@@ -5,6 +5,7 @@ import Breadcrumbs from '../components/Breadcrumbs.jsx';
 import LoadingSkeleton from '../components/LoadingSkeleton.jsx';
 import ToastMessage from '../components/ToastMessage.jsx';
 import { lmsService } from '../services/lmsService.js';
+import { mediaUrl } from '../utils/mediaUrl.js';
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api/v1';
 
@@ -26,6 +27,7 @@ export default function PracticePage() {
   }, [practiceId]);
 
   if (!practice) return <div className="page-shell"><LoadingSkeleton /></div>;
+  const practicePdfUrl = mediaUrl(practice.pdf_file);
 
   const showToast = (message) => {
     setToast(message);
@@ -59,8 +61,8 @@ export default function PracticePage() {
           <span className="eyebrow">Practice lab</span>
           <h1 className="h2 fw-bold mt-3">{practice.title}</h1>
           <p className="text-muted">{practice.description}</p>
-          {practice.pdf_file && (
-            <iframe className="w-100 media-frame" style={{ height: 640 }} src={practice.pdf_file} title={practice.title} />
+          {practicePdfUrl && (
+            <iframe className="w-100 media-frame" style={{ height: 640 }} src={practicePdfUrl} title={practice.title} />
           )}
         </div>
         <aside className="col-lg-4">
@@ -75,9 +77,9 @@ export default function PracticePage() {
               <button className="btn btn-outline-secondary w-100 mb-2 d-inline-flex align-items-center justify-content-center gap-2" type="button" onClick={bookmark}><Bookmark size={17} /> Bookmark</button>
               <button className="btn btn-outline-success w-100 mb-3 d-inline-flex align-items-center justify-content-center gap-2" type="button" onClick={markCompleted}><CheckCircle2 size={17} /> Mark completed</button>
               <div>
-                {files.pdf_file && <a className="resource-row text-decoration-none" href={files.pdf_file}>PDF</a>}
-                {files.example_files && <a className="resource-row text-decoration-none" href={files.example_files}>Example files</a>}
-                {files.source_code_files && <a className="resource-row text-decoration-none" href={files.source_code_files}>Source code files</a>}
+                {files.pdf_file && <a className="resource-row text-decoration-none" href={mediaUrl(files.pdf_file)} target="_blank" rel="noreferrer">PDF</a>}
+                {files.example_files && <a className="resource-row text-decoration-none" href={mediaUrl(files.example_files)} target="_blank" rel="noreferrer">Example files</a>}
+                {files.source_code_files && <a className="resource-row text-decoration-none" href={mediaUrl(files.source_code_files)} target="_blank" rel="noreferrer">Source code files</a>}
               </div>
             </div>
           </div>
