@@ -142,18 +142,15 @@ body.dark-mode .app-sidebar { background: rgba(9, 11, 19, 0.68); }
   image-rendering: auto;
 }
 
-.brand-logo-sidebar {
-  width: 58px;
-  height: 58px;
-  flex: 0 0 58px;
+.site-logo {
+  display: block;
+  height: 48px;
+  width: auto;
+  flex: 0 0 auto;
+  object-fit: contain;
   border-radius: 0;
+  background: transparent;
   box-shadow: none;
-}
-
-.brand-logo-header {
-  width: 46px;
-  height: 46px;
-  border-radius: 0;
 }
 
 .brand-logo-login {
@@ -188,9 +185,8 @@ body.dark-mode .app-sidebar { background: rgba(9, 11, 19, 0.68); }
   display: none;
 }
 
-.sidebar-collapsed .brand-logo-sidebar {
-  width: 58px;
-  height: 58px;
+.sidebar-collapsed .site-logo {
+  height: 48px;
 }
 
 .nav-pill {
@@ -798,6 +794,7 @@ body.dark-mode .spotlight-panel { background: rgba(15, 23, 42, 0.9); }
   .app-main { padding: 12px 16px 0; }
   .topbar { top: 10px; }
   .topbar-search { width: 100%; }
+  .site-logo { height: 36px; }
   .hero-panel { border-radius: 24px; }
   .floating-card { position: relative; right: auto; bottom: auto; width: 100%; margin-top: 24px; }
   .heatmap { grid-template-columns: repeat(10, minmax(12px, 1fr)); }

@@ -18,8 +18,6 @@ import {
 import SpotlightSearch from '../components/SpotlightSearch.jsx';
 import { useAuth } from '../hooks/useAuth.jsx';
 
-const BRAND_LOGO = `${import.meta.env.BASE_URL}brand-logo.svg`;
-
 const navItems = [
   { to: '/courses', label: 'Kurslar', icon: GraduationCap },
   { to: '/resources', label: 'Resurslar', icon: Library },
@@ -68,7 +66,11 @@ export default function MainLayout() {
       <SpotlightSearch open={spotlightOpen} onClose={() => setSpotlightOpen(false)} />
       <aside className="app-sidebar">
         <Link className="d-flex align-items-center gap-3 mb-4 text-decoration-none" to="/courses" aria-label="Cloud Education Platform home">
-          <img className="brand-logo brand-logo-sidebar" src={BRAND_LOGO} alt="Axborot Texnologiyalari va Menejment Universiteti logo" />
+          <img
+            src="/static/frontend/brand-logo.svg"
+            alt="Axborot Texnologiyalari va Menejment Universiteti"
+            className="site-logo"
+          />
           <span className="brand-copy">
             <span className="d-block fw-bold fs-5">cloude.uz</span>
             <span className="d-block small text-muted sidebar-meta">Cloud Education Platform</span>
@@ -99,7 +101,11 @@ export default function MainLayout() {
             <button className="btn btn-outline-secondary btn-sm" type="button" onClick={() => setCollapsed((value) => !value)} aria-label="Toggle sidebar">
               {collapsed ? <ChevronsRight size={17} /> : <ChevronsLeft size={17} />}
             </button>
-            <img className="brand-logo brand-logo-header" src={BRAND_LOGO} alt="Axborot Texnologiyalari va Menejment Universiteti logo" />
+            <img
+              src="/static/frontend/brand-logo.svg"
+              alt="Axborot Texnologiyalari va Menejment Universiteti"
+              className="site-logo"
+            />
             <button className="topbar-search border-0 text-start" type="button" onClick={() => setSpotlightOpen(true)}>
               <Search size={18} />
               <span>Search anything...</span>

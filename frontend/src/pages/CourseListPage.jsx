@@ -4,8 +4,6 @@ import { ArrowRight, BookOpen, CheckCircle2, Clock3, GraduationCap, Layers3, Sea
 import { motion } from 'framer-motion';
 import { lmsService } from '../services/lmsService.js';
 
-const BRAND_LOGO = `${import.meta.env.BASE_URL}brand-logo.svg`;
-
 export default function CourseListPage() {
   const [courses, setCourses] = useState([]);
   const [search, setSearch] = useState('');
@@ -19,7 +17,7 @@ export default function CourseListPage() {
   return (
     <div className="page-shell">
       <motion.section className="hero-panel mb-4" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }}>
-        <img className="brand-logo brand-logo-hero mb-3" src={BRAND_LOGO} alt="Axborot Texnologiyalari va Menejment Universiteti logo" />
+        <img className="brand-logo brand-logo-hero mb-3" src="/static/frontend/brand-logo.svg" alt="Axborot Texnologiyalari va Menejment Universiteti" />
         <span className="eyebrow"><Sparkles size={16} /> Cloud Education Platform</span>
         <h1 className="hero-title">Sun'iy intellekt asoslari</h1>
         <p className="hero-copy">Axborot Texnologiyalari va Menejment Universiteti uchun cloude.uz platformasida ma'ruzalar, amaliy materiallar, videolar, testlar va progress nazorati jamlangan.</p>

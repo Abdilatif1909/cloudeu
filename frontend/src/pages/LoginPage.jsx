@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { LogIn } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth.jsx';
 
-const BRAND_LOGO = `${import.meta.env.BASE_URL}brand-logo.svg`;
-
 export default function LoginPage() {
   const { login } = useAuth();
   const navigate = useNavigate();
@@ -27,7 +25,7 @@ export default function LoginPage() {
       <div className="row justify-content-center align-items-center" style={{ minHeight: '68vh' }}>
         <div className="col-lg-5">
           <div className="glass-card p-4 p-md-5">
-            <img className="brand-logo brand-logo-login mb-4" src={BRAND_LOGO} alt="Axborot Texnologiyalari va Menejment Universiteti logo" />
+            <img className="brand-logo brand-logo-login mb-4" src="/static/frontend/brand-logo.svg" alt="Axborot Texnologiyalari va Menejment Universiteti" />
             <span className="eyebrow">Secure access</span>
             <h1 className="h2 fw-bold mt-3 mb-2">Cloud Education Platform</h1>
             <p className="text-muted">cloude.uz orqali Sun'iy intellekt asoslari kursiga kiring.</p>
