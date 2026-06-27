@@ -17,6 +17,7 @@ pip install -r backend/requirements.txt
 cd backend
 python manage.py check
 python manage.py migrate
+python manage.py import_ai_course_content
 python manage.py collectstatic --noinput
 ```
 

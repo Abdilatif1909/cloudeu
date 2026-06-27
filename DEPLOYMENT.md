@@ -112,8 +112,11 @@ Run from the backend directory:
 cd /home/cloudeu2/lms/backend
 python manage.py check
 python manage.py migrate
+python manage.py import_ai_course_content
 python manage.py collectstatic --noinput
 ```
+
+`import_ai_course_content` scans the committed `pdf/maruza` and `pdf/amaliy` folders, creates the AI course lessons/material rows if the database is empty, attaches PDFs into `backend/media`, and imports the curated YouTube links.
 
 ## Restart Passenger
 
