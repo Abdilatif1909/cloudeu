@@ -1,0 +1,17 @@
+[
+  {
+    "model": "courses.course",
+    "pk": 1,
+    "fields": {
+      "title": "Sun'iy intellekt asoslari",
+      "code": "AI-101",
+      "description": "Sun'iy intellektning asosiy tushunchalari, qidiruv algoritmlari, bilimlarni ifodalash, mashinaviy o'rganish va amaliy AI tizimlari.",
+      "semester": 5,
+      "credits": 4,
+      "image": "",
+      "is_active": true,
+      "created_at": "2026-06-25T00:00:00Z",
+      "updated_at": "2026-06-25T00:00:00Z"
+    }
+  }
+]

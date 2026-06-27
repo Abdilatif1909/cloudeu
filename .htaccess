@@ -1,0 +1,35 @@
+# Ahost cPanel Passenger entrypoint for cloude.uz.
+# Keep static/media paths out of the SPA/Passenger fallback.
+
+Options -MultiViews
+
+<IfModule mod_mime.c>
+    AddType application/javascript .js .mjs
+    AddType text/css .css
+    AddType image/svg+xml .svg
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|mjs)$">
+        Header set Content-Type "application/javascript"
+    </FilesMatch>
+</IfModule>
+
+PassengerEnabled on
+PassengerAppRoot "/home/cloudeu2/lms"
+PassengerStartupFile passenger_wsgi.py
+PassengerAppType wsgi
+PassengerPython "/home/cloudeu2/virtualenv/lms/3.12/bin/python"
+PassengerAppEnv production
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Serve collected Django/Vite static files directly from Apache.
+    RewriteRule ^static/(.*)$ backend/staticfiles/$1 [L]
+
+    # Serve uploaded media directly when present.
+    RewriteRule ^media/(.*)$ backend/media/$1 [L]
+
+    # All other requests are handled by Passenger/Django.
+</IfModule>

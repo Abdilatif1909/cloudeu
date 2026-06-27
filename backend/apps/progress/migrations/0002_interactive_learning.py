@@ -1,0 +1,126 @@
+from django.conf import settings
+from django.db import migrations, models
+import django.db.models.deletion
+import django.utils.timezone
+
+
+class Migration(migrations.Migration):
+    dependencies = [
+        ("contenttypes", "0002_remove_content_type_name"),
+        ("courses", "0001_initial"),
+        ("lessons", "0001_initial"),
+        ("materials", "0002_resource_alter_lecturematerial_options_and_more"),
+        ("progress", "0001_initial"),
+        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+    ]
+
+    operations = [
+        migrations.AddField("studentprogress", "lecture_viewed", models.BooleanField(default=False)),
+        migrations.AddField("studentprogress", "lecture_completed", models.BooleanField(default=False)),
+        migrations.AddField("studentprogress", "pdf_downloaded", models.BooleanField(default=False)),
+        migrations.AddField("studentprogress", "video_started", models.BooleanField(default=False)),
+        migrations.AddField("studentprogress", "video_completed", models.BooleanField(default=False)),
+        migrations.AddField("studentprogress", "practice_downloaded", models.BooleanField(default=False)),
+        migrations.AddField("studentprogress", "practice_completed", models.BooleanField(default=False)),
+        migrations.AddField("studentprogress", "quiz_attempted", models.BooleanField(default=False)),
+        migrations.AddField("studentprogress", "quiz_passed", models.BooleanField(default=False)),
+        migrations.AddField("studentprogress", "study_seconds", models.PositiveIntegerField(default=0)),
+        migrations.AddField("studentprogress", "last_activity_at", models.DateTimeField(blank=True, null=True)),
+        migrations.AddField("quizresult", "attempt_number", models.PositiveSmallIntegerField(default=1)),
+        migrations.AddField("quizresult", "passed", models.BooleanField(default=False)),
+        migrations.CreateModel(
+            name="LearningEvent",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
+                ("event_type", models.CharField(choices=[("lecture_viewed", "Lecture viewed"), ("lecture_completed", "Lecture completed"), ("pdf_downloaded", "PDF downloaded"), ("video_started", "Video started"), ("video_completed", "Video completed"), ("practice_downloaded", "Practice downloaded"), ("practice_completed", "Practice completed"), ("quiz_attempted", "Quiz attempted"), ("quiz_passed", "Quiz passed"), ("note_updated", "Note updated")], max_length=32)),
+                ("study_seconds", models.PositiveIntegerField(default=0)),
+                ("metadata", models.JSONField(blank=True, default=dict)),
+                ("course", models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name="learning_events", to="courses.course")),
+                ("lesson", models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name="learning_events", to="lessons.lesson")),
+                ("student", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name="learning_events", to=settings.AUTH_USER_MODEL)),
+            ],
+            options={"ordering": ["-created_at"]},
+        ),
+        migrations.CreateModel(
+            name="PDFReadingProgress",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
+                ("current_page", models.PositiveIntegerField(default=1)),
+                ("total_pages", models.PositiveIntegerField(default=0)),
+                ("zoom", models.FloatField(default=1.0)),
+                ("reading_percentage", models.FloatField(default=0.0)),
+                ("completed", models.BooleanField(default=False)),
+                ("lecture", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name="reading_progress", to="materials.lecturematerial")),
+                ("student", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name="pdf_progress", to=settings.AUTH_USER_MODEL)),
+            ],
+            options={"ordering": ["student", "lecture"]},
+        ),
+        migrations.CreateModel(
+            name="PersonalNote",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
+                ("title", models.CharField(blank=True, max_length=255)),
+                ("content", models.TextField(blank=True)),
+                ("course", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name="notes", to="courses.course")),
+                ("lecture", models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name="notes", to="materials.lecturematerial")),
+                ("lesson", models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name="notes", to="lessons.lesson")),
+                ("student", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name="notes", to=settings.AUTH_USER_MODEL)),
+            ],
+            options={"ordering": ["-updated_at"]},
+        ),
+        migrations.CreateModel(
+            name="Bookmark",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
+                ("object_id", models.PositiveIntegerField()),
+                ("title", models.CharField(max_length=255)),
+                ("url", models.CharField(blank=True, max_length=255)),
+                ("content_type", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to="contenttypes.contenttype")),
+                ("student", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name="bookmarks", to=settings.AUTH_USER_MODEL)),
+            ],
+            options={"ordering": ["-created_at"]},
+        ),
+        migrations.CreateModel(
+            name="Certificate",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
+                ("certificate_id", models.CharField(max_length=64, unique=True)),
+                ("verification_code", models.CharField(max_length=128, unique=True)),
+                ("issued_at", models.DateTimeField(default=django.utils.timezone.now)),
+                ("course", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name="certificates", to="courses.course")),
+                ("student", models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name="certificates", to=settings.AUTH_USER_MODEL)),
+            ],
+            options={"ordering": ["-issued_at"]},
+        ),
+        migrations.CreateModel(
+            name="Notification",
+            fields=[
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
+                ("notification_type", models.CharField(choices=[("lecture", "New lecture published"), ("video", "New video added"), ("quiz", "Quiz available"), ("assignment", "Assignment updated")], max_length=32)),
+                ("title", models.CharField(max_length=255)),
+                ("message", models.TextField(blank=True)),
+                ("url", models.CharField(blank=True, max_length=255)),
+                ("is_read", models.BooleanField(default=False)),
+                ("course", models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name="notifications", to="courses.course")),
+                ("lesson", models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name="notifications", to="lessons.lesson")),
+                ("recipient", models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name="notifications", to=settings.AUTH_USER_MODEL)),
+            ],
+            options={"ordering": ["-created_at"]},
+        ),
+        migrations.AddIndex("learningevent", models.Index(fields=["student", "event_type", "created_at"], name="learning_student_event_idx")),
+        migrations.AddConstraint("pdfreadingprogress", models.UniqueConstraint(fields=("student", "lecture"), name="unique_student_pdf_progress")),
+        migrations.AddConstraint("bookmark", models.UniqueConstraint(fields=("student", "content_type", "object_id"), name="unique_student_bookmark")),
+        migrations.AddConstraint("certificate", models.UniqueConstraint(fields=("student", "course"), name="unique_student_course_certificate")),
+    ]

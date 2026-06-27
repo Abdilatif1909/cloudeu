@@ -1,0 +1,831 @@
+{
+  "lesson": 4,
+  "title": "4-dars: Vizual tahlil va Matplotlib testi",
+  "questions": [
+    {
+      "question": "Vizual tahlil va Matplotlib: concept bo'yicha easy savol #1. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Concept. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Concept",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: application bo'yicha medium savol #2. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Application. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Application",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: evaluation bo'yicha hard savol #3. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Evaluation. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Evaluation",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: algorithm bo'yicha easy savol #4. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Algorithm. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Algorithm",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: data bo'yicha medium savol #5. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Data. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Data",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: ethics bo'yicha hard savol #6. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Ethics. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Ethics",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: concept bo'yicha easy savol #7. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Concept. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Concept",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: application bo'yicha medium savol #8. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Application. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Application",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: evaluation bo'yicha hard savol #9. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Evaluation. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Evaluation",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: algorithm bo'yicha easy savol #10. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Algorithm. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Algorithm",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: data bo'yicha medium savol #11. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Data. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Data",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: ethics bo'yicha hard savol #12. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Ethics. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Ethics",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: concept bo'yicha easy savol #13. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Concept. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Concept",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: application bo'yicha medium savol #14. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Application. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Application",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: evaluation bo'yicha hard savol #15. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Evaluation. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Evaluation",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: algorithm bo'yicha easy savol #16. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Algorithm. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Algorithm",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: data bo'yicha medium savol #17. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Data. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Data",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: ethics bo'yicha hard savol #18. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Ethics. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Ethics",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: concept bo'yicha easy savol #19. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Concept. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Concept",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: application bo'yicha medium savol #20. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Application. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Application",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: evaluation bo'yicha hard savol #21. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Evaluation. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Evaluation",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: algorithm bo'yicha easy savol #22. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Algorithm. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Algorithm",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: data bo'yicha medium savol #23. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Data. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Data",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: ethics bo'yicha hard savol #24. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Ethics. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Ethics",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: concept bo'yicha easy savol #25. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Concept. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Concept",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: application bo'yicha medium savol #26. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Application. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Application",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: evaluation bo'yicha hard savol #27. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Evaluation. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Evaluation",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: algorithm bo'yicha easy savol #28. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Algorithm. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Algorithm",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: data bo'yicha medium savol #29. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Data. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Data",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: ethics bo'yicha hard savol #30. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Ethics. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Ethics",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: concept bo'yicha easy savol #31. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Concept. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Concept",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: application bo'yicha medium savol #32. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Application. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Application",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: evaluation bo'yicha hard savol #33. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Evaluation. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Evaluation",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: algorithm bo'yicha easy savol #34. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Algorithm. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Algorithm",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: data bo'yicha medium savol #35. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Data. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Data",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: ethics bo'yicha hard savol #36. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Ethics. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Ethics",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: concept bo'yicha easy savol #37. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Concept. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Concept",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: application bo'yicha medium savol #38. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Application. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Application",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: evaluation bo'yicha hard savol #39. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Evaluation. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Evaluation",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: algorithm bo'yicha easy savol #40. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Algorithm. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Algorithm",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: data bo'yicha medium savol #41. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Data. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Data",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: ethics bo'yicha hard savol #42. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Ethics. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Ethics",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: concept bo'yicha easy savol #43. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Concept. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Concept",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: application bo'yicha medium savol #44. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Application. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Application",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: evaluation bo'yicha hard savol #45. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Evaluation. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Evaluation",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: algorithm bo'yicha easy savol #46. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Algorithm. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Algorithm",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: data bo'yicha medium savol #47. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Data. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Data",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: ethics bo'yicha hard savol #48. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Ethics. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Ethics",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: concept bo'yicha easy savol #49. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Concept. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Concept",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: application bo'yicha medium savol #50. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Application. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Application",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: evaluation bo'yicha hard savol #51. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Evaluation. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Evaluation",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: algorithm bo'yicha easy savol #52. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Algorithm. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Algorithm",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: data bo'yicha medium savol #53. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Medium. Category: Data. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Medium",
+      "category": "Data",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: ethics bo'yicha hard savol #54. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Hard. Category: Ethics. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Hard",
+      "category": "Ethics",
+      "type": "Single Choice"
+    },
+    {
+      "question": "Vizual tahlil va Matplotlib: concept bo'yicha easy savol #55. Ushbu mavzuda eng to'g'ri yondashuv qaysi?",
+      "options": [
+        "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+        "Modelni ma'lumot sifatini tekshirmasdan darhol ishlab chiqarishga chiqarish.",
+        "Natijani faqat bitta tasodifiy misolda baholab qaror qilish.",
+        "Mavzuga aloqador bo'lmagan algoritmni parametrsiz qo'llash."
+      ],
+      "correct": 0,
+      "correct_answer": "Vizual tahlil va Matplotlib uchun ma'lumot, model va baholash talablarini izchil tahlil qilish.",
+      "explanation": "Difficulty: Easy. Category: Concept. To'g'ri javob mavzu, ma'lumot va baholash mezonlarini tizimli bog'laydi.",
+      "difficulty": "Easy",
+      "category": "Concept",
+      "type": "Single Choice"
+    }
+  ]
+}

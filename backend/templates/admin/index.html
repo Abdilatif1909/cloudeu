@@ -1,0 +1,81 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block content %}
+<div id="content-main">
+  <div class="module" style="margin-bottom: 24px;">
+    <h2>LMS Dashboard</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:12px 0;">
+      <div><strong>{{ lms_dashboard.courses }}</strong><br>Courses</div>
+      <div><strong>{{ lms_dashboard.universities }}</strong><br>Universities</div>
+      <div><strong>{{ lms_dashboard.faculties }}</strong><br>Faculties</div>
+      <div><strong>{{ lms_dashboard.departments }}</strong><br>Departments</div>
+      <div><strong>{{ lms_dashboard.groups }}</strong><br>Groups</div>
+      <div><strong>{{ lms_dashboard.enrollments }}</strong><br>Enrollments</div>
+      <div><strong>{{ lms_dashboard.lessons }}</strong><br>Lessons</div>
+      <div><strong>{{ lms_dashboard.lectures }}</strong><br>Lectures</div>
+      <div><strong>{{ lms_dashboard.videos }}</strong><br>Videos</div>
+      <div><strong>{{ lms_dashboard.practice_files }}</strong><br>Practice Files</div>
+      <div><strong>{{ lms_dashboard.resources }}</strong><br>Resources</div>
+      <div><strong>{{ lms_dashboard.quizzes }}</strong><br>Quizzes</div>
+      <div><strong>{{ lms_dashboard.students }}</strong><br>Students</div>
+      <div><strong>{{ lms_dashboard.audit_logs }}</strong><br>Audit Logs</div>
+    </div>
+    <h3>Latest uploads</h3>
+    <ul>
+      {% for upload in lms_dashboard.latest_uploads %}
+        <li>{{ upload.title }} - {{ upload.category }}</li>
+      {% empty %}
+        <li>No uploads yet.</li>
+      {% endfor %}
+    </ul>
+    <h3>Recent activity</h3>
+    <ul>
+      {% for item in lms_dashboard.recent_activity %}
+        <li>{{ item.title }} - {{ item.updated_at }}</li>
+      {% empty %}
+        <li>No activity yet.</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% if app_list %}
+    {% for app in app_list %}
+      <div class="app-{{ app.app_label }} module{% if app.app_url in request.path|urlencode %} current-app{% endif %}">
+        <table>
+          <caption>
+            <a href="{{ app.app_url }}" class="section" title="{% blocktranslate with name=app.name %}Models in the {{ name }} application{% endblocktranslate %}">{{ app.name }}</a>
+          </caption>
+          {% for model in app.models %}
+            <tr class="model-{{ model.object_name|lower }}{% if model.admin_url in request.path|urlencode %} current-model{% endif %}">
+              {% if model.admin_url %}
+                <th scope="row"><a href="{{ model.admin_url }}"{% if model.admin_url in request.path|urlencode %} aria-current="page"{% endif %}>{{ model.name }}</a></th>
+              {% else %}
+                <th scope="row">{{ model.name }}</th>
+              {% endif %}
+
+              {% if model.add_url %}
+                <td><a href="{{ model.add_url }}" class="addlink">{% translate "Add" %}</a></td>
+              {% else %}
+                <td></td>
+              {% endif %}
+
+              {% if model.admin_url and show_changelinks %}
+                {% if model.view_only %}
+                  <td><a href="{{ model.admin_url }}" class="viewlink">{% translate "View" %}</a></td>
+                {% else %}
+                  <td><a href="{{ model.admin_url }}" class="changelink">{% translate "Change" %}</a></td>
+                {% endif %}
+              {% else %}
+                <td></td>
+              {% endif %}
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>{% translate "You don't have permission to view or edit anything." %}</p>
+  {% endif %}
+</div>
+{% endblock %}
